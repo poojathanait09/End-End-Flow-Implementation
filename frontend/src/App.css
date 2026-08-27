@@ -72,3 +72,44 @@ button:hover {
   background-color:#555 ;
 
 }
+
+.confirmation-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.confirmation-card{
+  width: 500px;
+  padding: 40px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.confirmation-card h1{
+  margin-bottom: 15px;
+}
+
+.confirmation-card h2{
+  margin-bottom: 10px;
+}
+
+.user-details{
+  margin-top: 30px;
+  text-align: left;
+}
+
+.user-details div{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-details strong{
+  margin-right: 20px;
+}
