@@ -224,52 +224,7 @@ const validate = () => {
     return Object.keys(newErrors).length === 0;
 };
 
-    // const validate = () => {
 
-    //     const newErrors = {};
-
-    //     if(formData.firstName && !/^[A-Za-z]+$/.test(formData.firstName)){
-    //         newErrors.firstName = "First name should contain only alphabets.";
-    //     }
-
-    //     if(formData.lastName && !/^[A-Za-z]+$/.test(formData.lastName)){
-    //         newErrors.lastName = "Last name should contain only alphabets";
-    //     }
-
-    //     if(formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)){
-    //         newErrors.email = "Please enter a valid email";
-    //     }
-
-    //     if(formData.phone && !/^(?:\+[1-9]\d{12}|[1-9]\d{9})$/.test(formData.phone)) {
-    //         newErrors.phone = "Enter a valid phone number";
-    //     }
-
-    //     if(formData.password && !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@#$&!*]).{6,}$/.test(formData.password)){
-
-    //         newErrors.password = "Password must have at least 6 characters, one alphabet, one number and one special character(@#$&!*)";
-    //     }
-
-    //     if(formData.repeatPassword && formData.password !== formData.repeatPassword){
-    //         newErrors.repeatPassword = "Password do not match";
-    //     }
-
-    //     if(formData.pincode && !/^\d{6}$/.test(formData.pincode)){
-    //         newErrors.pincode = "Pincode must contain 6 digits";
-    //     }
-
-    //     seterrors(newErrors);
-
-    //     return Object.keys(newErrors).length === 0;
-    // };
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-
-    //     if(validate()){
-    //         console.log("Form is valid!");
-    //         console.log(formData);
-    //     }
-    // }
 
     const handleKeyDown = (e) => {
     if (e.key === "Enter") {
@@ -434,7 +389,7 @@ const handleSubmit = (e) => {
                         />
 
                         {touched.phone && errors.phone && (
-                            <p className="errors">
+                            <p className="error">
                                 {errors.phone}
                             </p>
                         )}
@@ -513,9 +468,5 @@ const handleSubmit = (e) => {
         </div>
     );
 }
-
-
-
-
 
 export default Signup;
